@@ -1,0 +1,24 @@
+{
+  "name": "Inventory-Exam",
+  "homepage": "https://github.com/mei18/Inventory-Exam",
+  "authors": [
+    "Melanie Liang <melly.strearshy@gmail.com>"
+  ],
+  "description": "exam",
+  "main": "index.html",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angularfire": "^2.0.1",
+    "bootstrap": "^3.3.6",
+    "angular": "angularjs#^1.5.7",
+    "angular-route": "^1.5.7",
+    "angular-resource": "^1.5.7"
+  }
+}

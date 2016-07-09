@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+}
+
+html,body{
+	background-color: #ede7e1;
+	height: 100%;
+}
+
+nav{
+	background-color: black;
+	color: white;
+}
+
+footer{
+	background-color: #c5c1bc;
+	border-top: solid;
+	border-top-width: 2px;
+	padding-top: 30px;
+	padding-bottom: 15px;
+	margin-top: 290px;
+}
+
+input {
+	margin-top: 10px;
+}
+
+.save {
+	border: none;
+	background-color: #ede7e1;
+
+}
+
+.save:hover {
+	background-color: #ede7e1;
+}
+
+.add {
+	border: none;
+	background-color: #c5c1bc;
+
+}
+.add:hover {
+	border: none;
+	background-color: #c5c1bc;
+
+}
+
+.wrap {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
+}
+
