@@ -4,9 +4,9 @@ angular.module('starter.factories', [])
 
   return {
     get: function($index) {
-      for (var i = 0; i < allImages.length; i++) {
-        if (allImages[i].id === parseInt($index)) {
-          return allImages[i];
+      for (var i = 0; i < lists.images.length; i++) {
+        if (lists.images[i].id === parseInt($index)) {
+          return lists.images[i];
         }
       }
       return null;

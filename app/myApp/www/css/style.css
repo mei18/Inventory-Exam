@@ -1,9 +1,6 @@
 /* Empty. Add your own CSS if you like */
-.image-list-thumb {
-    padding: 2px 2px 2px 2px;
-    height: 100px;
-}
 
-.transparent {
-    background: transparent !important;
+img {
+	width: 100%;
+	height: 9em;
 }

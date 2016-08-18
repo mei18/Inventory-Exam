@@ -26,29 +26,9 @@
     <script src="js/factories.js"></script>
   </head>
   <body ng-app="starter">
-
-    <ion-pane>
-      <ion-header-bar class="bar-dark">
-        <h1 class="title">Mis productos</h1>
-      </ion-header-bar>
-
-      <ion-content>
-        <ion-item ng-repeat="image in images">
-          <div class="row" ng-if="$index % 2 === 0"> 
-            <div class="col col-50" ng-if="$index < images.length">
-              <p>{{image.name}}</p>
-              <img ng-src="{{images[$index].image}}" width="100%" />
-              <p>{{image.price}}</p>
-            </div>
-
-            <div class="col col-50" ng-if="$index + 1 < images.length">
-              <p>{{image.name}}</p>
-              <img ng-src="{{images[$index + 1].image}}" width="100%" />
-              <p>{{image.price}}</p>
-            </div>     
-          </div>
-        </ion-item>
-      </ion-content>
-    </ion-pane>
+      <div class="bar bar-header bar-dark">
+        <h1 class="title">Mis Productos</h1>
+      </div> 
+       <ion-nav-view class="background"></ion-nav-view>
   </body>
 </html>

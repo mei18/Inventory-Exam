@@ -23,6 +23,24 @@ angular.module('starter', ['ionic','firebase', 'starter.controllers', 'starter.f
   });
 })
 
+.config(function($stateProvider, $urlRouterProvider) {
+
+  // Ionic uses AngularUI Router which uses the concept of states
+  // Learn more here: https://github.com/angular-ui/ui-router
+  // Set up the various states which the app can be in.
+  // Each state's controller can be found in controllers.js
+  $stateProvider
+
+  .state('gallery', {
+      url: '/gallery',
+          templateUrl: 'templates/gallery.html',
+          controller: 'MediaCtrl as lists'
+    });
+
+   
+  // if none of the above states are matched, use this as the fallback
+  $urlRouterProvider.otherwise('/gallery');
+
   // Initialize Firebase
       var config = {
         apiKey: "AIzaSyCYf24HUySojyf2ZBQ_BQlJuJ_P8VfxSHk",
@@ -32,4 +50,5 @@ angular.module('starter', ['ionic','firebase', 'starter.controllers', 'starter.f
       };
       firebase.initializeApp(config);
 
+});
 
